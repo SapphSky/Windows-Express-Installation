@@ -7,5 +7,5 @@ Invoke-WebRequest -Uri $Url -OutFile $DownloadZipFile -TimeoutSec 30
 & echo "Launching WuMgr..."
 Start-Process -FilePath $DownloadZipFile\wumgr.exe
 
-& echo "Creating Shortcut on Desktop..."
+echo "Creating Shortcut on Desktop... Just in case!"
 Invoke-WebRequest -Uri "https://github.com/SapphSky/Windows-Express-Installation/raw/main/Relaunch%20WuMgr.lnk" -OutFile "$env:HOMEPATH\Desktop\Relaunch WuMgr.lnk" -TimeoutSec 15
