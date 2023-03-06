@@ -130,7 +130,7 @@
         <SynchronousCommand wcm:action="add">
           <Description>Powercfg Battery report</Description>
           <Order>1</Order>
-          <CommandLine>cmd.exe /C powercfg /batteryreport /output C:/Users/Administartor/Desktop</CommandLine>
+          <CommandLine>cmd.exe /C powercfg /batteryreport /output C:/Users/Administartor/Desktop/battery_report.html</CommandLine>
         </SynchronousCommand>
         
         <SynchronousCommand wcm:action="add">
