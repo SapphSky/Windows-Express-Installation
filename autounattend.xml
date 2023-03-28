@@ -129,13 +129,13 @@
 
         <SynchronousCommand wcm:action="add">
           <Description>Powercfg Battery report</Description>
-          <Order>1</Order>
-          <CommandLine>cmd.exe /C powercfg /batteryreport /output C:/Users/Administartor/Desktop/battery_report.html</CommandLine>
+          <Order>2</Order>
+          <CommandLine>cmd.exe /C powercfg /batteryreport /output "C:/Users/Administrator/Desktop/battery_report.html"</CommandLine>
         </SynchronousCommand>
         
         <SynchronousCommand wcm:action="add">
           <Description>Download and Install WuMgr</Description>
-          <Order>2</Order>
+          <Order>3</Order>
           <CommandLine>powershell.exe -NoLogo -ExecutionPolicy unrestricted -noprofile -WindowStyle Hidden -Command "& {Invoke-WebRequest -Uri "https://github.com/SapphSky/Windows-Express-Installation/raw/main/wumgr.lnk" -OutFile "$env:HOMEPATH\Desktop\Launch WuMgr.lnk"}"</CommandLine>
         </SynchronousCommand>
 
